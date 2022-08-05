@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Sign_In Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body background="karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg" style = "background-size: 100%;">
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">THE WEB DEVELOPERS</span>
+            </header>
+            <section class = "flex mx-10" style="background-color:rgb(160, 178, 189) ;">
+                
+                <form name = "form1" method="get" action = "page_2.html">
+                    <!-- <h1  class = "flex mx-auto;" style = "font-size:xx-large; font-family: Arial, Helvetica, sans-serif;"><b><br>SIGN UP HERE</b></h1> -->
+                    <br><br>
+                    <span class= "ml-8 text-xl">Email_Address&nbsp;</span>
+                    <br>
+                    <input   id = "em1" class = "mx-auto" size = "20" type = "email" name = "email" placeholder="          email address" required>
+                    <br><br> 
+                    <span class = "ml-8 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;Password</span>
+                    <br>
+                    <input id = "pswd1"class = "mx-auto" size  ="20" type = "password" name = "password" placeholder="        enterpassword" required>
+                    <br><br>
+                    <button id = "check" class="inline-flex items-center border-0 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 ml-11">SIGN IN
+                        <svg fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>       
+                </form>
+            </section>
+               
+    </body>
+</html>

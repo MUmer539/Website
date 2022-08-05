@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Sign_Up Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>  
+            function matchemail() {  
+              var em1 = document.getElementById("em1");  
+              var em2 = document.getElementById("em2");  
+              if(em1 != em2)  
+              {   
+                alert("Email did not match");  
+              } 
+            </script> 
+            <script>  
+                function matchpassword() {  
+                  var pw1 = document.getElementById("pswd1");  
+                  var pw2 = document.getElementById("pswd2");  
+                  if(pw1 != pw2)  
+                  {   
+                    alert("Passwords did not match");  
+                  } 
+                }  
+                </script> 
+    </head>
+    <body background="karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg" style = "background-size: 100%;">
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">THE WEB DEVELOPERS</span>
+            </header>
+            <section class = "flex mx-10" style="background-color:rgb(160, 178, 189) ;">
+                <form name = "form1" method="get" action = "page_2.html">
+                    <!-- <h1  class = "flex mx-auto;" style = "font-size:xx-large; font-family: Arial, Helvetica, sans-serif;"><b><br>SIGN UP HERE</b></h1> -->
+                    <br><span class = "ml-12 text-xl">Username&nbsp;</span>
+                    <br>
+                    <input type="text" class = "mx-auto" size ="20"name="name" placeholder="             username" required>
+                    <br><br>
+                    <span class= "ml-8 text-xl">Email_Address&nbsp;</span>
+                    <br>
+                    <input   id = "em1" class = "mx-auto" size = "20" type = "email" name = "email" placeholder="          email address" required>
+                    <br><br> 
+                    <span class = "ml-8 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;Password</span>
+                    <br>
+                    <input id = "pswd1"class = "mx-auto" size  ="20" type = "password" name = "password" placeholder="        enterpassword" required>
+                    <br><br>
+                    <span class = "ml-4 text-xl">Confirm Password</span>
+                    <br>
+                    <input id = "pswd2" class = "mx-auto" size  ="20" type = "password" name = "password" placeholder="        enterpassword" required>
+                    <br><br>
+                    <button id = "check" class="inline-flex items-center border-0 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 ml-11" onclick = "matchpassword()">SIGN UP
+                        <svg fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button> 
+                    <br><br><hr>      
+                    <p class ='ml-4'>alreay have an account?</p><br>
+                    <button id = "check" class="inline-flex items-center border-0 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 ml-11" onclick="location.href = 'sign_in page.html'">SIGN IN
+                        <svg fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button> 
+                        
+                </form>
+            </section>
+          
+               
+    </body>
+</html>
